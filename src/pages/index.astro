@@ -36,36 +36,38 @@ const test = [...Array(65)];
   </head>
   <body>
     <Header title={SITE_TITLE} />
-    <main class="text-lg text-neutral-200 w-[65ch]">
-      <div>
-        <h4>Satoshi</h4>
+    <main class="text-lg text-neutral-200">
+      <section class="w-[65ch]">
+        <div>
+          <h4>Satoshi</h4>
+          <p>
+            {test.map((idx) => "0")}
+          </p>
+        </div>
+        <div>
+          <h4>Default</h4>
+          <p>
+            {test.map((idx) => "0")}
+          </p>
+        </div>
+        <h1 class="text-4xl pb-2">Hi, I'm nexxel</h1>
         <p>
-          {test.map((idx) => "0")}
+          I'm a 17 y/o self-taught developer and I like to build cool stuff. I'm
+          interested in <b>web development</b>,
+          <b>serverless</b> tech and I live on the <b>terminal</b>.
         </p>
-      </div>
-      <div>
-        <h4>Default</h4>
+        <br />
         <p>
-          {test.map((idx) => "0")}
+          I'm currently in 12th grade, busy studying for final exams. In my free
+          time I like to write <a href="/blog">blogs</a> and practice <a
+            href="https://en.wikipedia.org/wiki/Cardistry"
+            target="_blank">cardistry</a
+          >. I also like listening to music and going on cycling trips with
+          friends.
         </p>
-      </div>
-      <h1 class="text-4xl pb-2">Hi, I'm nexxel</h1>
-      <p>
-        I'm a 17 y/o self-taught developer and I like to build cool stuff. I'm
-        interested in <b>web development</b>,
-        <b>serverless</b> tech and I live on the <b>terminal</b>.
-      </p>
-      <br />
-      <p>
-        I'm currently in 12th grade, busy studying for final exams. In my free
-        time I like to write <a href="/blog">blogs</a> and practice <a
-          href="https://en.wikipedia.org/wiki/Cardistry"
-          target="_blank">cardistry</a
-        >. I also like listening to music and going on cycling trips with
-        friends.
-      </p>
-      <br />
-      <br />
+        <br />
+        <br />
+      </section>
       <h2 class="text-3xl pb-4">Things I've Built</h2>
 
       <section
