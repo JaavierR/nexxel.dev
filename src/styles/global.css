@@ -2,46 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Satoshi";
-  src: url("/fonts/Satoshi-Black.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
+@layer base {
+  @font-face {
+    font-family: "Satoshi";
+    src: url("/fonts/Satoshi-Black.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: optional;
+  }
 
-@font-face {
-  font-family: "Satoshi";
-  src: local("Satoshi Bold"), local("Satoshi-Bold"),
-    url("/fonts/Satoshi-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Satoshi";
+    src: local("Satoshi Bold"), local("Satoshi-Bold"),
+      url("/fonts/Satoshi-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: optional;
+  }
 
-@font-face {
-  font-family: "Satoshi";
-  src: local("Satoshi Medium"), local("Satoshi-Medium"),
-    url("/fonts/Satoshi-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Satoshi";
+    src: local("Satoshi Medium"), local("Satoshi-Medium"),
+      url("/fonts/Satoshi-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: optional;
+  }
 
-@font-face {
-  font-family: "Satoshi";
-  src: local("Satoshi Regular"), local("Satoshi-Regular"),
-    url("/fonts/Satoshi-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+  @font-face {
+    font-family: "Satoshi";
+    src: local("Satoshi Regular"), local("Satoshi-Regular"),
+      url("/fonts/Satoshi-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: optional;
+  }
 
-@font-face {
-  font-family: "Hack";
-  src: url("/fonts/hack-regular-subset.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  @font-face {
+    font-family: "Hack";
+    src: url("/fonts/hack-regular-subset.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 html {
@@ -49,7 +51,7 @@ html {
 }
 
 body {
-  @apply font-satoshi m-auto p-5 max-w-[65ch] text-left bg-neutral-900 break-words leading-6 text-neutral-100 antialiased;
+  @apply mx-auto p-5 max-w-[52.5rem] text-left bg-neutral-900 break-words leading-6 text-neutral-100 antialiased;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
   word-wrap: break-word;

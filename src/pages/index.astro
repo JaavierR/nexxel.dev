@@ -25,6 +25,8 @@ const pinnedRepos = await fetch(
 ).then(async (response) => {
   return (await response.json()) as PinnedRepo[];
 });
+
+const test = [...Array(65)];
 ---
 
 <!DOCTYPE html>
@@ -32,9 +34,21 @@ const pinnedRepos = await fetch(
   <head>
     <BaseHead title={`${SITE_TITLE} home`} description={SITE_DESCRIPTION} />
   </head>
-  <body>
+  <body class="font-satoshi">
     <Header title={SITE_TITLE} />
     <main class="text-lg text-neutral-200">
+      <div class="font-satoshi">
+        <h4>Satoshi</h4>
+        <p>
+          {test.map((idx) => "0")}
+        </p>
+      </div>
+      <div>
+        <h4>Default</h4>
+        <p>
+          {test.map((idx) => "0")}
+        </p>
+      </div>
       <h1 class="text-4xl pb-2">Hi, I'm nexxel</h1>
       <p>
         I'm a 17 y/o self-taught developer and I like to build cool stuff. I'm
